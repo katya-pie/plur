@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio | Graphic Designer</title>
+  <style>
+    :root {
+      --bg: #fff;
+      --text: #111;
+      --accent: #ff6f61;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111;
+        --text: #eee;
+        --accent: #ffb86c;
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+      transition: background 0.5s, color 0.5s;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 900px;
+      margin-top: 3rem;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.03);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 100%;
+      display: block;
+    }
+
+    .card h3 {
+      margin: 0.8rem;
+      font-size: 1rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hi, I'm Alex</h1>
+    <p>Graphic Designer & Visual Creator</p>
+  </header>
+
+  <main class="portfolio">
+    <div class="card">
+      <img src="https://via.placeholder.com/600x400" alt="Project 1" />
+      <h3>Brand Identity for Studio Nova</h3>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/600x400" alt="Project 2" />
+      <h3>Poster Series for Urban Art Week</h3>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/600x400" alt="Project 3" />
+      <h3>Minimal Product Packaging</h3>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Alex Doe | <a href="mailto:alex@example.com" style="color: var(--accent)">Contact</a>
+  </footer>
+</body>
+</html>
