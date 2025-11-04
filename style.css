@@ -1,81 +1,12 @@
-    :root {
-      --bg: #fff;
-      --text: #111;
-      --accent: #ff6f61;
-    }
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+  color: #222;
+  text-align: center;
+  margin: 0;
+  padding: 2rem;
+}
 
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #111;
-        --text: #eee;
-        --accent: #ffb86c;
-      }
-    }
-
-    body {
-      margin: 0;
-      font-family: "Poppins", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      padding: 2rem;
-      transition: background 0.5s, color 0.5s;
-    }
-
-    header {
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin: 0;
-      letter-spacing: 1px;
-    }
-
-    p {
-      margin-top: 0.5rem;
-      font-size: 1.1rem;
-      color: var(--accent);
-    }
-
-    .portfolio {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      width: 100%;
-      max-width: 900px;
-      margin-top: 3rem;
-    }
-
-    .card {
-      background: rgba(0, 0, 0, 0.03);
-      border-radius: 10px;
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .card img {
-      width: 100%;
-      display: block;
-    }
-
-    .card h3 {
-      margin: 0.8rem;
-      font-size: 1rem;
-    }
-
-    footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #888;
-    }
+h1 {
+  color: #ff6f61;
+}
