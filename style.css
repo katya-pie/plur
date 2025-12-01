@@ -1,5 +1,5 @@
 body {
-  background-color: #fafafa;
+  background-color: #000000; /* Set the background of the website to black */
   color: #222;
   text-align: center;
   margin: 0;
@@ -8,13 +8,56 @@ body {
 }
 
 h1 {
-  color: #000000;
+  color: #ff69b4; /* Hot pink */
   font-family: "Helvetica", "Arial", sans-serif;
-  font-size: 10vw; /* Dynamically adjust font size based on viewport width */
+  font-size: 2vw; /* Dynamically adjust font size based on viewport width */
   white-space: nowrap; /* Prevent text from wrapping */
   margin: 0;
   transform: scale(3, 1); /* Stretch horizontally by 3 times, keep height unchanged */
   display: inline-block; /* Ensure transform applies correctly */
+}
+
+/* General styles for the navbar */
+.navbar {
+  display: flex;
+  justify-content: center; /* Center the navbar items */
+  align-items: center;
+  padding: 1rem 0; /* Add padding to the navbar */
+  margin-top: 2rem; /* Add space between the navbar and the title */
+  background-color: transparent; /* No background color */
+}
+
+.navbar ul {
+  list-style: none; /* Remove list markers */
+  display: flex; /* Arrange items horizontally */
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 1rem; /* Add space between the buttons */
+}
+
+.navbar a {
+  display: flex; /* Use flex to center the text inside the button */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  color: #fff; /* White text color */
+  text-decoration: none; /* Remove underline */
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  padding: 1rem; /* Add some padding for spacing */
+  background-color: #ff69b4; /* Hot pink background */
+  border-radius: 9999px; /* Ensure a perfect oval shape */
+  aspect-ratio: 2 / 1; /* Enforce a 2:1 width-to-height ratio */
+  width: 10rem; /* Set the width, height adjusts automatically */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Add hover effects */
+}
+
+/* Add hover effect for the buttons */
+.navbar a:hover {
+  background-color: #ff1493; /* Darker pink on hover */
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
 }
 
 .menu {
@@ -34,7 +77,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 0rem;
   border-radius: 8px; /* Optional: Add rounded corners */
   text-transform: uppercase;
   text-decoration: none;
@@ -44,4 +87,21 @@ h1 {
 
 .menu-item:hover {
   background-color: #d6d6d6; /* Change background on hover */
+}
+
+/* Style for the button wrapper divs */
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 12rem; /* Increase the width for a more oval shape */
+  /* height: 4rem; /* Decrease the height slightly */
+  background-color: #9969ff; /* Hot pink background */
+  border-radius: 50%; /* Perfect oval shape */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Add hover effects */
+}
+
+.button-wrapper:hover {
+  background-color: #ff1493; /* Darker pink on hover */
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
 }
